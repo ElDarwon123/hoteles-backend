@@ -1,0 +1,2 @@
+npm i mongoose @nestjs/mongoose --save
+npm i 
