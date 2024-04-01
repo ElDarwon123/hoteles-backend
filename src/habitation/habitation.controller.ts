@@ -3,7 +3,7 @@ import { HabitationService } from './habitation.service';
 import { CreateHabitationDto } from './dto/create-habitation.dto';
 import { UpdateHabitationDto } from './dto/update-habitation.dto';
 
-@Controller('habitation')
+@Controller('api/habitation')
 export class HabitationController {
   constructor(private readonly habitationService: HabitationService) { }
 
