@@ -1,5 +1,5 @@
 import { PartialType } from '@nestjs/mapped-types';
-import { CreateHabitationDto } from './create-habitation.dto';
+import { CreateHabitationDto, Disponible, Huespedes, Servicios, tipoHabitacion } from './create-habitation.dto';
 
 export class UpdateHabitationDto extends PartialType(CreateHabitationDto) {
     nombre: string;
@@ -7,7 +7,10 @@ export class UpdateHabitationDto extends PartialType(CreateHabitationDto) {
     imagen: string;
     localizacion: string;
     precio: number;
-    tipoDeHabitacion: string;
+    calificacion: number;
+    disponibilidad: Disponible;
+    tipoDeHabitacion: tipoHabitacion;
     capacidad: number;
-    
+    huespedes: Huespedes;
+    servicios: Servicios;
 }
