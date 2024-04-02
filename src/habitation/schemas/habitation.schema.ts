@@ -1,6 +1,6 @@
 import { Schema } from "mongoose";
 
-
+// type habitation schema
 const tipoHabitacion = new Schema({
     hotels: { type: String, default: "Hotel" },
     apartamento: { type: String, default: "Apartamento" },
